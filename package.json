@@ -1,0 +1,17 @@
+{
+  "name": "bun-with-oxlint-type-aware",
+  "version": "1.0.0",
+  "description": "Test bun with oxlint and type-aware linting",
+  "type": "module",
+  "scripts": {
+    "lint": "oxlint --tsconfig ./tsconfig.json -c oxlint.json src/",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "oxlint": "^1.0.0",
+    "typescript": "^5.0.0",
+    "@types/bun": "latest"
+  },
+  "packageManager": "bun@1.2.0"
+}
